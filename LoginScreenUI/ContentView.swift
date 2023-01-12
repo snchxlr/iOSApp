@@ -8,7 +8,7 @@
 import SwiftUI
 import LRAtsSDK
 
-let appId = "e47b5b24-f041-4b9f-9467-4744df409e31"
+let appId = "e47b5b24-f041-4b9f-9467-4744df409e31" //sample appid
 
 struct ContentView: View {
     @State private var email = ""
