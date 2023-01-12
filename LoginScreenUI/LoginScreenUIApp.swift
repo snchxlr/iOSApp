@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LRAtsSDK
 
 @main
 struct LoginScreenUIApp: App {

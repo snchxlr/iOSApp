@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ats-sdk-ios-prod",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/faktorio/ats-sdk-ios-prod",
+      "state" : {
+        "revision" : "2f4eca2bd2bb171eeae47ce163ffb1db68aa31f3",
+        "version" : "1.4.0"
+      }
+    }
+  ],
+  "version" : 2
+}

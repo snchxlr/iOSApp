@@ -11,6 +11,7 @@
 		42411E97296FB86D0085C255 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42411E96296FB86D0085C255 /* ContentView.swift */; };
 		42411E99296FB86F0085C255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42411E98296FB86F0085C255 /* Assets.xcassets */; };
 		42411E9C296FB86F0085C255 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42411E9B296FB86F0085C255 /* Preview Assets.xcassets */; };
+		42411EA4296FC69D0085C255 /* LRAtsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 42411EA3296FC69D0085C255 /* LRAtsSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42411EA4296FC69D0085C255 /* LRAtsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LoginScreenUI;
+			packageProductDependencies = (
+				42411EA3296FC69D0085C255 /* LRAtsSDK */,
+			);
 			productName = LoginScreenUI;
 			productReference = 42411E91296FB86D0085C255 /* LoginScreenUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 42411E88296FB86D0085C255;
+			packageReferences = (
+				42411EA2296FC69D0085C255 /* XCRemoteSwiftPackageReference "ats-sdk-ios-prod" */,
+			);
 			productRefGroup = 42411E92296FB86D0085C255 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42411EA2296FC69D0085C255 /* XCRemoteSwiftPackageReference "ats-sdk-ios-prod" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/faktorio/ats-sdk-ios-prod";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42411EA3296FC69D0085C255 /* LRAtsSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42411EA2296FC69D0085C255 /* XCRemoteSwiftPackageReference "ats-sdk-ios-prod" */;
+			productName = LRAtsSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42411E89296FB86D0085C255 /* Project object */;
 }
